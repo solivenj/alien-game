@@ -66,7 +66,9 @@ def check_bullet_alien_collisions(ai_settings, screen, ship, aliens, bullets):
     if len(aliens) == 0:
         # Destroy existing bullets and create new fleet.
         bullets.empty()
-        create_fleet(ai_settings, screen, ship, aliens)
+        # create_fleet(ai_settings, screen, ship, aliens)
+        # return true
+        sys.exit()
 
 def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
     """
